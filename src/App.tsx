@@ -1,11 +1,6 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Trophy, RotateCcw, AlertCircle, ChevronRight, Hash, HelpCircle } from 'lucide-react';
+import { Trophy, RotateCcw, AlertCircle } from 'lucide-react';
 
 type GameStatus = 'playing' | 'won' | 'lost';
 
@@ -402,19 +397,6 @@ export default function App() {
           ))}
         </div>
       )}
-
-      <style dangerouslySetInnerHTML={{ __html: `
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #E2E8F0;
-          border-radius: 10px;
-        }
-      `}} />
     </div>
   );
 }
