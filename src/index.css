@@ -5,8 +5,17 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+:root {
+  --bg-color: #F8FAFC;
+}
+
+:root.dark {
+  --bg-color: #000000; /* black */
+}
+
 body {
-  background-color: #F8FAFC;
+  background-color: var(--bg-color);
+  transition: background-color 0.5s ease;
 }
 
 /* Hide scrollbars for a cleaner look */
@@ -26,4 +35,8 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #E2E8F0;
   border-radius: 10px;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1E293B;
 }
