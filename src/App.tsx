@@ -248,7 +248,34 @@ export default function App() {
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
                 目標：<span className="text-slate-200">{status === 'playing' ? '??' : targetNumber}</span>
               </h1>
-              <p className="text-slate-400 mt-4 text-sm font-medium">目前範圍：{currentRange.min} 到 {currentRange.max}</p>
+              
+              {/* Enhanced Range Hint */}
+              <div className="mt-8 flex items-center justify-center gap-4 md:gap-8">
+                <motion.div 
+                  key={currentRange.min}
+                  initial={{ scale: 0.9, opacity: 0.5 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className="bg-slate-50 border border-slate-100 px-6 py-3 rounded-2xl shadow-sm"
+                >
+                  <span className="text-[10px] block text-slate-400 font-black uppercase tracking-widest mb-1">最小值</span>
+                  <span className="text-3xl font-black text-indigo-600 font-mono tracking-tighter">{currentRange.min}</span>
+                </motion.div>
+                
+                <div className="flex flex-col items-center">
+                  <div className="w-8 h-px bg-slate-200"></div>
+                  <span className="text-[10px] text-slate-300 font-bold mt-1 uppercase">TO</span>
+                </div>
+
+                <motion.div 
+                  key={currentRange.max}
+                  initial={{ scale: 0.9, opacity: 0.5 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className="bg-slate-50 border border-slate-100 px-6 py-3 rounded-2xl shadow-sm"
+                >
+                  <span className="text-[10px] block text-slate-400 font-black uppercase tracking-widest mb-1">最大值</span>
+                  <span className="text-3xl font-black text-rose-500 font-mono tracking-tighter">{currentRange.max}</span>
+                </motion.div>
+              </div>
             </div>
 
             {/* Input Control */}
