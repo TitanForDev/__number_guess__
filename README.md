@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 猜數字遊戲 (Guess the Number)
 
-# Run and deploy your AI Studio app
+一個現代化、響應式的 1-100 猜數字遊戲，具有動態視覺回饋與慶祝效果。
 
-This contains everything you need to run your app locally.
+## 如何執行
 
-View your app in AI Studio: https://ai.studio/apps/0de76fb2-20ef-475a-8757-9736f31b41dd
+1. 安裝相依套件：
+   ```bash
+   npm install
+   ```
 
-## Run Locally
+2. 啟動開發伺服器：
+   ```bash
+   npm run dev
+   ```
 
-**Prerequisites:**  Node.js
+3. 在瀏覽器中開啟顯示的網址（通常是 http://localhost:5173）。
 
+## 遊戲規則
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- 系統會隨機產生一個 1 到 100 之間的數字。
+- 你有 7 次機會可以猜測。
+- 每次猜測後，系統會提示你猜高了還是低了。
+- 祝你好運！

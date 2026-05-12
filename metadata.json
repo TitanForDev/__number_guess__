@@ -1,6 +1,0 @@
-{
-  "name": "猜數字遊戲 (Guess the Number)",
-  "description": "一個現代化、響應式的 1-100 猜數字遊戲，具有動態視覺回饋與慶祝效果。",
-  "requestFramePermissions": [],
-  "majorCapabilities": []
-}
