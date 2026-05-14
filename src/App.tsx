@@ -155,7 +155,7 @@ export default function App() {
       <nav className="h-16 px-4 md:px-12 border-b border-slate-200 dark:border-slate-900 bg-white/80 dark:bg-black/80 backdrop-blur-md flex items-center justify-between shrink-0 z-10 transition-colors duration-500">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">N</div>
-          <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">終極密碼<span className="text-indigo-600">.挑戰</span></span>
+          <span className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">終極密碼<span className="text-indigo-600">.挑戰</span></span>
         </div>
         <div className="flex items-center gap-4 md:gap-6">
           <button 
